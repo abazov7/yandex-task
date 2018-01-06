@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Яндекс.Переговорки</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="yandexsans/stylesheet.css">
+</head>
+<body>
+	<header class="clearfix">
+		<div class="menu">
+			<a href="index.html" class="logo"><img src="img/logo.svg"></a>
+			<a href="#" class="submit_btn meeting_btn">Создать встречу</a>
+		</div>
+		<hr>
+	</header>
+	<section class="meeting_create">
+		<form>
+			<div class="meeting_head">
+				<h1>Новая встреча</h1>
+				<img class="close" src="img/close.svg">
+			</div>
+			<div class="meeting_topic">
+				<p class="description">Тема</p>
+				<input type="text" name="topic" placeholder="О чём будете говорить?">
+			</div>
+			<div class="meeting_date">
+				<div>
+					<p class="description">Дата</p>
+					<input type="text" name="date" value="14 декабря, 2017" readonly>
+				</div>
+				<div>
+					<p class="description">Начало</p>
+					<input type="time" name="starttime" value="16:00">
+				</div>
+				–
+				<div>
+					<p class="description">Конец</p>
+					<input type="time" name="endtime" value="16:30">
+				</div>
+			</div>
+			<div class="meeting_members">
+				<p class="description">Участники</p>
+				<input type="text" name="members" placeholder="Например, Тор Одинович">
+			</div>
+			<div class="meeting_rooms">
+				<p class="description">Рекомендованные переговорки</p>
+				<div class="room"><span class="room_time">16:00 – 16:30</span>&nbsp;<span class="room_info">Готем · 4 этаж</span></div>
+				<div class="room"><span class="room_time">16:00 – 16:30</span>&nbsp;<span class="room_info">Поле непаханное · 4 этаж</span></div>
+				<div class="room"><span class="room_time">16:00 – 16:30</span>&nbsp;<span class="room_info">Тёмная башня · 4 этаж</span></div>
+			</div>
+		</form>
+	</section>
+	<hr>
+	<section class="btn_panel">
+		<a href="#" class="regular_btn">Отмена</a>
+		<a href="#" class="submit_btn meeting_btn">Создать встречу</a>
+	</section>
+</body>
+</html>

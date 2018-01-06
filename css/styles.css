@@ -1,0 +1,236 @@
+body {
+  font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+  margin: 0;
+  min-width: 1920px;
+  padding: 0
+}
+a {text-decoration: none}
+.menu {
+  width: 96.2%;
+  margin: 0 auto
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+hr {
+  float: left;
+  height: 1px;
+  width: 100%;
+  background-color: #e9ecef;
+  border: none;
+  color: #e9ecef;
+  margin: 0;
+  padding: 0
+}
+li {list-style: none}
+input {outline: none}
+input:hover {border-color: #007dff}
+.logo {
+  float: left;
+  margin: 25px 0
+}
+.meeting_btn {
+  float: right;
+}
+.submit_btn {
+  margin-top: 18px;
+  background-color: #007dff;
+  padding: 13px 17px;
+  box-shadow: none;
+  color: #fff;
+  border-radius: 0.4em
+}
+.submit_btn:hover {background-color: #2b50fd}
+.date,.rooms {
+  margin-left: 1.9%;
+  padding: 10px 0;
+}
+.date > * {display: inline-block}
+.arrow_left {transform: rotate(-180deg)}
+.arrow {
+  float: left;
+  margin: 12px 0;
+  vertical-align: middle;
+  background-color: #e9ecef;
+  padding: 4.5px 9px;
+  border-radius: 50%
+}
+.current_date,.current_day {
+  font-size: 1.1em;
+  font-weight: 500
+}
+.current_day {
+  float: left;
+  padding: 0 1.1%;
+  margin: 16px 0
+}
+.datelist {
+  float: left;
+  display: flex
+}
+.datelist li {
+  vertical-align: middle;
+  margin-right: 57.6px;
+  padding: 2px 10px;
+  font-size: 0.9em;
+  font-weight: 600
+}
+.datelist li:last-child {margin-right: 0}
+.date_unable,.room_unable,.floor {color: #858e98}
+.date_active {
+  color: #fff;
+  background-color: #007dff;
+  border-radius: 0.8em;
+  position: relative;
+  left: 395px
+}
+.rooms {float: left}
+.room_info {margin-bottom: 20px}
+.floor {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.floor:first-child {padding-top: 0}
+.room_name {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 5px
+}
+.room_capacity {
+  font-size: 0.9em;
+  font-weight: 500
+}
+.room_active {color: #007dff}
+.room_timetable {
+  float: left;
+  position: absolute;
+  padding-left: 407px;
+  display: inline-flex;
+  flex-wrap: nowrap
+}
+.timetable_element {
+  width: 287px;
+  height: 47px;
+  opacity: 0.7
+}
+.timetable_unable {
+  background-color: #bbd2e8;
+  width: 95px
+}
+.timetable_unable:hover {background-color: #92a3b5}
+.timetable_able {
+  background-color: #fff;
+  width: 95px
+}
+.timetable_able:hover {background-color: #2b50fd}
+.current_vline {
+  background-color: #007dff;
+  position: absolute;
+  width: 1px;
+  left: 28px;
+  height: 821px;
+  z-index: 999;
+}
+.schedule {float: right}
+.vline {
+  display: inline-block;
+  margin-right: 5.5em;
+  background-color: #dee7f4;
+  width: 1px;
+  height: 800px
+}
+.vline:last-child {margin-right: 75px}
+.min_15 {width: 23.75px}
+.min_30 {width: 47.5px}
+.min_45 {width: 71.25px}
+.min_60 {width: 95px}
+.min_75 {width: 118.75px}
+.min_90 {width: 142.5px}
+.min_105 {width: 166.25px}
+.min_120 {width: 190px}
+
+
+/* New Meeting Page */
+
+.meeting_create {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 36px 0 500px 0
+}
+.meeting_head {margin-bottom: 60px}
+.meeting_head > * {display: inline-block}
+form {padding-top: 1px;}
+h1 {
+  float: left;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0
+}
+.close {
+  float: right;
+  width: 15px;
+  padding: 5px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+}
+.description {
+  margin: 0;
+  padding: 0 0 7px 0;
+  font-weight: bold
+}
+.meeting_create input {
+  height: 43px;
+  border: 2px solid #e9ecef;
+  border-radius: 2px;
+  font-size: 0.9em;
+  color: #858e98;
+  padding-left: 10px
+}
+.meeting_date input {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500
+}
+.meeting_topic, .meeting_date, .meeting_date > div {display: inline-block}
+.meeting_date, .meeting_rooms {float: right}
+.meeting_topic input, .meeting_members input {width: 500px}
+.meeting_date input {width: 80px}
+.meeting_date div:first-child input {
+  width: 270px;
+  margin-right: 10px;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 250px
+}
+.meeting_members, .meeting_rooms {
+  padding-top: 25px;
+  display: inline-block
+}
+.meeting_rooms {width: 502px}
+.room {
+  margin-bottom: 10px;
+  padding: 15px 11px;
+  background-color: #e9ecef;
+  border: 1px solid #e9ecef;
+  border-radius: 5px
+}
+.room_time {
+  font-weight: bold;
+  padding-right: 10px
+}
+.regular_btn {
+  float: left;
+  margin-top: 18px;
+  background-color: #e9ecef;
+  padding: 13px 17px;
+  color: #000;
+  box-shadow: none;
+  border-radius: 0.4em
+}
+.btn_panel {
+  max-width: 15%;
+  margin: 0 auto
+}
